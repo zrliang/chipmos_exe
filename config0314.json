@@ -174,7 +174,7 @@
             "peak_period" : [0,0.3,0.5,0.7,1],
             "weight_setup_times" : [100000000,1000000000,10000000000],
             "weight_max_setup_times" : [0],
-            "weight_total_completion_time" : [0],
+            "weight_total_completion_time" : [0], 
             "weight_cr" : [1],
             "weight_tr" : [0],
             "setup_time_cwn" : [30],

@@ -1,0 +1,52 @@
+digraph "population_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="population_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" list_ops" ,fontname="Helvetica"];
+  Node2 [label="list_operations_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist__operations__t.html",tooltip="The structure to store all operations of struct list_ele_t. The user can define their own operations."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weights" ,fontname="Helvetica"];
+  Node3 [label="weights_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structweights__t.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" machines" ,fontname="Helvetica"];
+  Node4 [label="__machine_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____machine__t.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" location\nmodel_name" ,fontname="Helvetica"];
+  Node5 [label="__info_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____info__t.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" base" ,fontname="Helvetica"];
+  Node6 [label="machine_base_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmachine__base__t.html",tooltip="A machine_base object in genetic algorithm."];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" machine_no" ,fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tail\nroot" ,fontname="Helvetica"];
+  Node7 [label="list_ele_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist__ele__t.html",tooltip="A node of double-linked list."];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext" ,fontname="Helvetica"];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tools\nwires" ,fontname="Helvetica"];
+  Node8 [label="resources_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structresources__t.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" areses" ,fontname="Helvetica"];
+  Node9 [label="auxiliary_resource_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structauxiliary__resource__t.html",tooltip=" "];
+  Node5 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" machine_no\nname" ,fontname="Helvetica"];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" current_job" ,fontname="Helvetica"];
+  Node10 [label="job_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjob__t.html",tooltip=" "];
+  Node5 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pin_package\ncustomer\nlocation\nprod_id\nbdid\npart_id\npart_no\npkg_id" ,fontname="Helvetica"];
+  Node7 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" list" ,fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" base" ,fontname="Helvetica"];
+  Node11 [label="job_base_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjob__base__t.html",tooltip="A structure that store genes and some basic information about job."];
+  Node5 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" job_info\nmachine_no" ,fontname="Helvetica"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" process_time" ,fontname="Helvetica"];
+  Node12 [label="process_time_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprocess__time__t.html",tooltip="A structure that store machine number and its process time."];
+  Node5 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" machine_no" ,fontname="Helvetica"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scheduling_parameters" ,fontname="Helvetica"];
+  Node13 [label="scheduling_parameters_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structscheduling__parameters__t.html",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" chromosomes" ,fontname="Helvetica"];
+  Node14 [label="chromosome_base_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structchromosome__base__t.html",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" setup_times_parameters" ,fontname="Helvetica"];
+  Node15 [label="__setup_time_parameters_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____setup__time__parameters__t.html",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" jobs" ,fontname="Helvetica"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" machine_ops" ,fontname="Helvetica"];
+  Node16 [label="machine_base_operations_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmachine__base__operations__t.html",tooltip="The structure to store all operations of struct machine_base_t."];
+  Node17 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" setup_time_functions" ,fontname="Helvetica"];
+  Node17 [label="setup_time_unit_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsetup__time__unit__t.html",tooltip=" "];
+  Node11 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" function" ,fontname="Helvetica"];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" job_ops" ,fontname="Helvetica"];
+  Node18 [label="job_base_operations_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjob__base__operations__t.html",tooltip=" "];
+  Node5 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" get_machine_no" ,fontname="Helvetica"];
+}
